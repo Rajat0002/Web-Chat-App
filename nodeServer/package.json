@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Rajat0002/Web-Chat-App#readme",
   "dependencies": {
+    "nodemon": "^2.0.20",
     "socket.io": "^4.5.4"
   }
 }
