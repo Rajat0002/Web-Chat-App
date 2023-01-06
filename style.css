@@ -7,9 +7,12 @@
 
 .container {
   max-width: 955px;
-  background-color: crimson;
+  border: 2px solid black;
   margin: auto;
   height: 60vh;
+  padding: 33px;
+  overflow-y: auto;
+  margin-bottom: 23px;
 }
 .message {
   background-color: rgb(36, 20, 94);
@@ -27,7 +30,31 @@
   float: right;
   clear: both;
 }
+
+#send-container{
+  display: block;
+  margin:auto;
+  text-align:center;
+  max-width: 985px;
+  width:100%;
+
+}
+#messageInp{
+   width:92%;
+   border:2px solid black;
+   border-radius:6px;
+   height: 34px;
+
+}
+.btn{
+  cursor: pointer;
+  border: 2px solid black;
+  border-radius: 6px;
+  height: 34px;
+
+}
 body{
-    background-image: linear-gradient(rgb(100, 31, 31),rgb(55, 44, 95));
+    height: 100vh;
+    background-image: linear-gradient(rgb(56, 117, 203),rgb(38, 24, 91));
     
 }
