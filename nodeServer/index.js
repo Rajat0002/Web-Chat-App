@@ -4,14 +4,14 @@ const io=require('socket.io')(8000)
 const users={};
 
 io.on('connection',socket =>{
-    socket.on('new-user-joined', nameof=>{
-        console.log("New user",nameof)
-        users[socket.id] = nameof;
-        socket.broadcast.emit('user-joined',nameof);
+    socket.on('new-user-joined', name=>{
+        console.log("New user",name)
+        users[socket.id] = name;
+        socket.broadcast.emit('user-joined',name);
 
     });
     socket.on('send',message =>{
-        socket.broadcast.emit('recieve',{message:message,name : users[socket.id]})
+        socket.broadcast.emit('recieve',{message:message, name : users[socket.id]})
     });
 
     socket.on('disconnect',message=>{
